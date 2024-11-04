@@ -185,7 +185,7 @@ class twoStream(leafGeometry,canopyStructure):
     elif self.JULES_lad=='horizontal':
       return 1.0
     else:
-      raise Exception, 'Unknown JULES leaf angle ditribution: '%self.JULES_lad
+      raise Exception(f"Unknown JULES leaf angle ditribution: {self.JULES_lad}")
 
 
   # ========================================
@@ -248,7 +248,7 @@ class twoStream(leafGeometry,canopyStructure):
     elif self.JULES_lad=='horizontal':
       return w/4.
     else:
-      raise Exception, 'Unknown JULES leaf angle ditribution: '%self.JULES_lad
+      raise Exception(f"Unknown JULES leaf angle ditribution: {self.JULES_lad}")
 
 
 
@@ -350,7 +350,7 @@ class twoStream(leafGeometry,canopyStructure):
     elif self.JULES_lad=='horizontal':
       sqcost=1.0
     else:
-      raise Exception, 'Unknown JULES leaf angle ditribution: '%self.JULES_lad
+      raise Exception(f"Unknown JULES leaf angle ditribution: {self.JULES_lad}")
     
     return 0.5*(w+d*sqcost)/w
 

@@ -153,7 +153,7 @@ class leafGeometry( ):
     elif self.JULES_lad=='horizontal':
       return self.G_horizontal(mu)
     else:
-      raise Exception, 'Unknown JULES leaf angle ditribution: '%self.JULES_lad
+      raise Exception(f"Unknown JULES leaf angle ditribution: {self.JULES_lad}")
       
       
       
@@ -169,7 +169,7 @@ class leafGeometry( ):
     """
   
     if self.CLM_chiL < -1.0 or self.CLM_chiL > 1.0:
-      raise Exception, "parameter chiL out of range: "%self.CLM_chiL
+      raise Exception(f"parameter chiL out of range: {self.CLM_chiL}")
 
     return self.CLM_phi1()+self.CLM_phi2()*mu
 
