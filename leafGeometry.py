@@ -202,7 +202,7 @@ def test_GFunctions( ):
     l.gDash=GFuncs[func]
     x=[]
     y=[]
-    for theta in xrange(0,90,2):
+    for theta in range(0,90,2):
       mu=np.cos(np.deg2rad(theta))
       x.append(theta)
       y.append(l.G_integ_gDash(mu))
@@ -230,7 +230,7 @@ def test_gFunctions( ):
   
     x=[]
     y=[]
-    for theta in xrange(0,90,2):
+    for theta in range(0,90,2):
       mu=np.cos(np.deg2rad(theta))
       x.append(theta)
       y.append(GFuncs[func](mu))

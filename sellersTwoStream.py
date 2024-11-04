@@ -433,7 +433,7 @@ class twoStream(leafGeometry,canopyStructure):
     #calculate fluxes at the top and bottom 
     #of each layer
     laiPerLayer=self.lai/self.nLayers
-    for i in xrange(self.nLayers+1):
+    for i in range(self.nLayers+1):
   
       laiSum=laiPerLayer*i
   
